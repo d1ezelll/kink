@@ -8,6 +8,32 @@ body {
     overflow-x: hidden;
 }
 
+.change__language {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    color: white;
+    z-index: 3;
+}
+
+.change__language button {
+    background: rgba(193, 18, 31, 1) !important;
+    font-family: Oswald !important;
+    font-weight: 700;
+    font-size: 12px;
+    color: white !important;
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 1px;
+}
+
+.change__language button:active {
+    opacity: 0.8;
+}
+
+
 main {
     font-family: Oswald;
     background: rgba(11, 11, 15, 1);
@@ -84,7 +110,7 @@ main {
 
 .intro-subtitle__description-block p {
     font-weight: 400;
-    font-size: 32px;
+    font-size: 20px;
 }
 
 .intro-bottom {

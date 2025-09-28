@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/main.js" defer></script>
+    <link rel="stylesheet" href="./css/styleV1.css">
+    <script src="./js/mainV1.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
+        <div class="change__language">
+            <button id="change__RU" class="lang-btn active" data-lang="ru">RU</button>
+            <button id="change__EN active" class="lang-btn" data-lang="en">EN</button>
+        </div>
         <section class="intro">
             <img src="./img/first/background.png" alt="" class="intro-background">
             <img src="./img/first/background_mobile.png" alt="" class="intro-background mobile">
             <div class="intro-container">
                 
                 <div class="intro-title">
-                    <img src="./img/first/kink.png" alt="" class="intro-title-kink">
-                    <h1 class="intro-title__white">Закрытая</h1>
+                    <img id="introTitleKink" src="./img/first/kink.png" alt="" class="intro-title-kink">
+                    <h1 data-i18n="introTitle__white" class="intro-title__white">Закрытая</h1>
                 </div>
 
                 <div class="intro-subtitle">
-                    <p class="intro-subtitle__text">
+                    <p data-i18n="introSubtitle__text" class="intro-subtitle__text">
                         Ночь свободы, уважения и игры. Атмосфера<br>
                         для общения и знакомства без предрассудков.
                     </p>
@@ -31,12 +35,12 @@
                     <div class="intro-subtitle__description">
                         <div class="intro-subtitle__description-block">
                             <img src="./img/first/web.png" alt="" class="intro-subtitle__img">
-                            <p>Чикаго</p>
+                            <p data-i18n="introSubtitle__descriptionBlock">Чикаго</p>
                         </div>
 
                         <div class="intro-subtitle__description-block">
                             <img src="./img/first/key.png" alt="" class="intro-subtitle__img">
-                            <p>Только 18+</p>
+                            <p data-i18n="introSubtitle__descriptionBlock18">Только 18+</p>
                         </div>
                         
                     </div>
@@ -44,13 +48,13 @@
 
                 <div class="intro-bottom">
                     <ul class="intro-bottom__list">
-                        <li class="intro-bottom__list-item">Закрытая локация</li>
-                        <li class="intro-bottom__list-item">Вход по кодовому слову</li>
-                        <li class="intro-bottom__list-item">Проверка 18+</li>
-                        <li class="intro-bottom__list-item">Конфиденциально</li>
+                        <li data-i18n="introBottom__listItemFirst" class="intro-bottom__list-item">Закрытая локация</li>
+                        <li data-i18n="introBottom__listItemSecond" class="intro-bottom__list-item">Вход по кодовому слову</li>
+                        <li data-i18n="introBottom__listItemThird" class="intro-bottom__list-item">Проверка 18+</li>
+                        <li data-i18n="introBottom__listItemFourth" class="intro-bottom__list-item">Конфиденциально</li>
                     </ul>
 
-                    <button class="intro-bottom__button" style="cursor: pointer;">Подать заявку</button>
+                    <button data-i18n="introBottom__button" class="intro-bottom__button" style="cursor: pointer;">Подать заявку</button>
                 </div>
             </div>
         </section>
@@ -61,12 +65,12 @@
                 <img src="./img/second/map.png" alt="" class="map-background">
 
                 <div class="map-title">
-                    <p class="map-title__text">Следующая встреча — </p>
-                    <img src="./img/second/chicago.png" alt="">
+                    <p data-i18n="mapTitle__text" class="map-title__text">Следующая встреча — </p>
+                    <img id="chicago" src="./img/second/chicago.png" alt="">
                 </div>
 
                 <div class="map-subtitle">
-                    <div class="map-subtitle__text">
+                    <div data-i18n="mapSubtitle__text" class="map-subtitle__text">
                         <span>Правила:</span><br>
                         уважение границ, согласие <br> 
                         без компромиссов. Дресс<br>
@@ -74,10 +78,10 @@
                     </div>
 
                     <ul class="map-subtitle__list">
-                        <li class="map-subtitle__list-item">согласие</li>
-                        <li class="map-subtitle__list-item">приватность</li>
-                        <li class="map-subtitle__list-item">без фото/видео в зоне мероприятия</li>
-                        <li class="map-subtitle__list-item">соблюдение дресс-кода.</li>
+                        <li data-i18n="mapSubtitle__listItemFirst" class="map-subtitle__list-item">согласие</li>
+                        <li data-i18n="mapSubtitle__listItemSecond" class="map-subtitle__list-item">приватность</li>
+                        <li data-i18n="mapSubtitle__listItemThird" class="map-subtitle__list-item">без фото/видео в зоне мероприятия</li>
+                        <li data-i18n="mapSubtitle__listItemFourth" class="map-subtitle__list-item">соблюдение дресс-кода.</li>
                     </ul>
                 </div>
             </div>
@@ -85,7 +89,7 @@
 
         <section class="galery">
             <div class="galery-container">
-                <img src="./img/photo/galery.png" alt="" class="galery-title">
+                <img id="galery" src="./img/photo/galery.png" alt="" class="galery-title">
 
                 <div class="galery-collage__wrapper">
                     <img src="./img/photo/first.png" alt="" class="galery-collage__photo">
@@ -106,80 +110,80 @@
 
         <section class="about">
             <div class="about-container">
-                <img src="./img/fourth/how.png" alt="" class="about-title">
+                <img id="aboutTitle" src="./img/fourth/how.png" alt="" class="about-title">
 
                 <div class="about-list">
                     <div class="about-list__item">
                         <span>1</span>
-                        <p>Подаёте заявку и авторизуетесь через почту</p>
+                        <p data-i18n="aboutList__itemFirst">Подаёте заявку и авторизуетесь через почту</p>
                     </div>
 
                     <div class="about-list__item">
                         <span>2</span>
-                        <p>Получаете письмо с датой/временем/районом и кодовым словом</p>
+                        <p data-i18n="aboutList__itemSecond">Получаете письмо с датой/временем/районом и кодовым словом</p>
                     </div>
 
                     <div class="about-list__item">
                         <span>3</span>
-                        <p>Подтверждаете 18+ — проходите верификацию личности</p>
+                        <p data-i18n="aboutList__itemThird">Подтверждаете 18+ — проходите верификацию личности</p>
                     </div>
 
                     <div class="about-list__item">
                         <span>4</span>
-                        <p>Получаете финальное письмо с инструкцией входа.</p>
+                        <p data-i18n="aboutList__itemFourth">Получаете финальное письмо с инструкцией входа.</p>
                     </div>
                 </div>
 
-                <button class="intro-bottom__button" style="cursor: pointer;">Подать заявку</button>
+                <button data-i18n="introBottom__buttonSecond" class="intro-bottom__button" style="cursor: pointer;">Подать заявку</button>
             </div>
         </section>
 
         <section class="faq">
             <div class="faq-container">
-                <img src="./img/fifth/faq.png" alt="" class="faq-title">
+                <img id="faq" src="./img/fifth/faq.png" alt="" class="faq-title">
             </div>
 
             <div class="faq-list">
                 <div class="faq-list__item">
                     <div class="faq-list__item-close">
-                        <p>Зачем авторизация?</p>
+                        <p data-i18n="faqList__itemCloseFirst">Зачем авторизация?</p>
                         <span>+</span>
                     </div>
                     
-                    <p class="faq-list__item-open active">
+                    <p data-i18n="faqList__itemOpenFirst" class="faq-list__item-open active">
                         Только 18+, защита участников и исключение ботов/дублей.
                     </p>
                 </div>
 
                 <div class="faq-list__item">
                     <div class="faq-list__item-close">
-                        <p>Зачем KYC?</p>
+                        <p data-i18n="faqList__itemCloseSecond">Зачем KYC?</p>
                         <span>+</span>
                     </div>
                     
-                    <p class="faq-list__item-open">
+                    <p data-i18n="faqList__itemOpenSecond" class="faq-list__item-open">
                         Только 18+, защита участников и исключение ботов/дублей.
                     </p>
                 </div>
 
                 <div class="faq-list__item">
                     <div class="faq-list__item-close">
-                        <p>Где адрес?</p>
+                        <p data-i18n="faqList__itemCloseThird">Где адрес?</p>
                         <span>+</span>
                     </div>
                     
-                    <p class="faq-list__item-open">
+                    <p data-i18n="faqList__itemOpenThird" class="faq-list__item-open">
                         Только 18+, защита участников и исключение ботов/дублей.
                     </p>
                 </div>
 
                 <div class="faq-list__item">
                     <div class="faq-list__item-close">
-                        <p>Что брать с собой?</p>
+                        <p data-i18n="faqList__itemCloseFourth">Что брать с собой?</p>
                         <span>+</span>
                     </div>
                     
-                    <p class="faq-list__item-open">
+                    <p data-i18n="faqList__itemOpenFourth" class="faq-list__item-open">
                         Только 18+, защита участников и исключение ботов/дублей.
                     </p>
                 </div>
@@ -190,7 +194,7 @@
     <footer>
         <div class="footer-container">
             <div class="footer-left">
-                <p class="footer-contact">Контакты</p>
+                <p data-i18n="footerContact" class="footer-contact">Контакты</p>
 
                 <div class="footer-contact__mail">
                     <img src="./img/fifth/Frame.png" alt="">
@@ -203,9 +207,9 @@
                 </div>
             </div>
             <div class="footer-right">
-                <a href="" class="footer-politics">Политика конфиденциальности</a>
-                <a href="" class="footer-agreement">Пользовательское соглашение</a>
-                <a href="" class="footer-rules">Правила мероприятия</a>
+                <a href="" data-i18n="footerPolitics" class="footer-politics">Политика конфиденциальности</a>
+                <a href="" data-i18n="footerAgreement" class="footer-agreement">Пользовательское соглашение</a>
+                <a href="" data-i18n="footerRules" class="footer-rules">Правила мероприятия</a>
             </div>
         </div>
     </footer>
