@@ -106,7 +106,6 @@ function changeLanguage(lang) {
         document.getElementById('introTitleKink').src = './img/first/kink.png';
         document.querySelector('.intro-title-kink').style.width = '95%';
         document.querySelector('.intro-title-kink').style.right = '-6%';
-        document.querySelector('.intro-title__white').style.letterSpacing = '2px';
         document.getElementById('chicago').src = './img/second/chicago.png';
         document.getElementById('galery').src = './img/photo/galery.png';
         document.getElementById('aboutTitle').src = './img/fourth/how.png';
@@ -115,7 +114,6 @@ function changeLanguage(lang) {
             document.getElementById('introTitleKink').src = './img/first/kink_en.png';
             document.querySelector('.intro-title-kink').style.width = '80%';
             document.querySelector('.intro-title-kink').style.right = '3%';
-            document.querySelector('.intro-title__white').style.letterSpacing = '48px';
             document.getElementById('chicago').src = './img/second/chicago_en.png';
             document.getElementById('galery').src = './img/photo/galery_en.png';
             document.getElementById('aboutTitle').src = './img/fourth/how_en.png';
